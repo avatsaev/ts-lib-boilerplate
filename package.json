@@ -1,0 +1,27 @@
+{
+  "name": "@avatsaev/utils-test",
+  "version": "1.0.4",
+  "description": "Set of useful pure functions",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack",
+    "test": "jasmine-ts \"spec/**/*.spec.ts\"",
+    "deploy": "cp package.json dist && cd dist && npm publish",
+    "predeploy": "npm test && npm run build"
+  },
+  "author": "",
+  "types": "dist/index.d.ts",
+  "license": "ISC",
+  "dependencies": {},
+  "devDependencies": {
+    "@types/jasmine": "^2.8.3",
+    "jasmine-spec-reporter": "^4.2.1",
+    "jasmine-ts": "^0.2.1",
+    "ts-loader": "^3.2.0",
+    "tslint": "^5.8.0",
+    "tslint-immutable": "^4.4.0",
+    "typescript": "^2.6.2",
+    "uglifyjs-webpack-plugin": "^1.1.5",
+    "webpack": "^3.10.0"
+  }
+}
